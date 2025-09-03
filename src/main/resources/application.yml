@@ -1,0 +1,18 @@
+# src/main/resources/application.yml
+server:
+  port: 8080
+
+spring:
+  application:
+    name: mcp-infra-server
+
+# Our custom app settings
+mcp:
+  server:
+    name: "MCP Infrastructure Diagram Server"
+    version: "1.0.0"
+    description: "Generates infrastructure diagrams from cloud provider credentials"
+
+logging:
+  level:
+    com.devops.mcp_infra_server: INFO
