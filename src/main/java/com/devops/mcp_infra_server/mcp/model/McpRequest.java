@@ -1,4 +1,4 @@
-package com.devops.mcp_infra_server.model;
+package com.devops.mcp_infra_server.mcp.model;
 
 import com.fasterxml.jackson.databind.JsonNode;
 

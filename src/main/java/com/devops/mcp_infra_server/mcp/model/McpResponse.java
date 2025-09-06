@@ -1,7 +1,9 @@
-package com.devops.mcp_infra_server.model;
+package com.devops.mcp_infra_server.mcp.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.JsonNode;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class McpResponse {
     private String jsonrpc = "2.0";
     private String id;

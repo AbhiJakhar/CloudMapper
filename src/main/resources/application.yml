@@ -12,7 +12,10 @@ mcp:
     name: "MCP Infrastructure Diagram Server"
     version: "1.0.0"
     description: "Generates infrastructure diagrams from cloud provider credentials"
-
+    websocket:
+      path: "/mcp"
+      port: 8080
 logging:
   level:
     com.devops.mcp_infra_server: INFO
+    org.springframework.web.socket: DEBUG
