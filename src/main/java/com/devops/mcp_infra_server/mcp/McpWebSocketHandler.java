@@ -1,4 +1,4 @@
-// src/main/java/com/devops/mcpinfra/mcp/McpWebSocketHandler.java
+// When AI sends JSON messages, parses them , route them to right handler and sends response back
 package com.devops.mcp_infra_server.mcp;
 
 import com.devops.mcp_infra_server.mcp.model.McpRequest;

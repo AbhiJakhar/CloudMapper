@@ -1,3 +1,4 @@
+// Data model for MCP tool result
 package com.devops.mcp_infra_server.mcp.tool;
 
 import com.fasterxml.jackson.annotation.JsonInclude;

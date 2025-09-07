@@ -54,6 +54,20 @@ public class ListProvidersTools implements McpTool {
 
         schema.set("properties", properties);
 
+        // Final schema
+        // {
+        //  "type": "object",
+        //  "properties": {
+        //    "provider": {
+        //      "type": "string",
+        //      "description": "Filter by provider name (optional)"
+        //    },
+        //    "active": {
+        //      "type": "boolean",
+        //      "description": "Filter by active status (optional)"
+        //    }
+        //  }
+        //}
         return schema;
     }
 

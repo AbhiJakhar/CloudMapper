@@ -1,12 +1,23 @@
+// This is how AI assistant sends requests,
+//Example request:
+//        {
+//         "jsonrpc": "2.0",
+//         "id": "123",
+//         "method": "tools/call",
+//         "params": {
+//             "name": "list_cloud_providers",
+//             "arguments": {"active": true}
+//          }
+//        }
 package com.devops.mcp_infra_server.mcp.model;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class McpRequest {
-    private String jsonrpc = "2.0";
-    private String id;
-    private String method;
-    private JsonNode params;
+    private String jsonrpc = "2.0";    // Protocol version
+    private String id;                 // Request ID
+    private String method;             // What to do ("tools/list", "tools/call")
+    private JsonNode params;           // Parameters for the method
 
     public McpRequest() {};
 

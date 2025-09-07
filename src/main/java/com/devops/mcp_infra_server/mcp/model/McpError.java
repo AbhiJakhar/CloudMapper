@@ -1,3 +1,4 @@
+// This is how error model looks
 package com.devops.mcp_infra_server.mcp.model;
 
 public class McpError {

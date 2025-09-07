@@ -1,3 +1,14 @@
+// This is how the server responds
+//{
+//  "jsonrpc": "2.0",
+//  "id": "123",
+//  "result": {
+//    "content": [
+//      {"name": "aws", "region": "us-east-1", "active": true},
+//      {"name": "azure", "region": "eastus", "active": true}
+//    ]
+//  }
+//}
 package com.devops.mcp_infra_server.mcp.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -6,9 +17,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class McpResponse {
     private String jsonrpc = "2.0";
-    private String id;
-    private JsonNode result;
-    private McpError error;
+    private String id;              // Same ID as request
+    private JsonNode result;        // Success data
+    private McpError error;         // or error info
 
     public McpResponse() {}
 
